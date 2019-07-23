@@ -23,7 +23,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Terraform
-RUN wget https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip -O terraform.zip && \
+RUN wget https://releases.hashicorp.com/terraform/0.12.5/terraform_0.12.5_linux_amd64.zip -O terraform.zip && \
     unzip terraform.zip -d /usr/local/bin && \
     rm terraform.zip && \
     chmod +x /usr/local/bin/*
